@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer'
+  ;
+}
+
+header {
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.100);
+  background-color: #30BFBF;
+  padding: 1rem 0rem;
+}
+
+.navbar_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.navbar_brands {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_brands span {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar_brands img {
+  fill: transparent;
+  stroke: transparent;
+}
+
+.navbar_social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.linked_external_site {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.navbar_button {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .3rem 1.3rem;
+  border-radius: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  outline:.15rem solid rgba(0, 0, 0, 0.387);
+  border: .2rem solid white;
+}
+
+nav {
+  width: 100%;
+  grid-area: nav;
+  position: relative;
+}
+
+.abs-nav-container {
+  position: fixed;
+  inset: 0;
+  width: 0;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.navbar {
+  top: 1rem;
+  position: sticky;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: white;
+}
+
+.navbar_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.nb-main-linkTitle:hover {
+  text-decoration: underline;
+}
+
+.nb-main-item {
+  display: block;
+  position: relative;
+  padding: 1rem 0;
+  padding-left: 1rem;
+}
+
+.navbar_dropdwon {
+  height: 0;
+  overflow: hidden;
+}
+
+.navbar_dropdwon ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.navbar_dropdwon ul li::marker {
+  content: '- ';
+}  
+
+.navbar_dropdwon.navbar_show {
+  height: 100%;
+  overflow: initial;
+}
+
+.nbr-drop-item:hover {
+  background-color: rgba(211, 211, 211, 0.425);
+}
+
+
+
+/* El contenido principal de mi pagina web */
+.hero {
+  width: 100%;
+  grid-area: main;
+  position: relative;
+}
+
+.next-page {
+  border: .2rem solid white;
+  outline: .2rem solid #30BFBF;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  padding: 1.5rem;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  border-radius: 1000px;
+  box-shadow: 0 0 30px -20px rgba(0, 0, 0, 0.500) inset;
+  opacity: .3;
+  transition: opacity 1s ease;
+}
+
+.next-page img {
+  pointer-events: none
+}
+
+.next-page::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 143%;
+  background-color: #222;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity .5s;
+  z-index: 2;
+}
+
+.next-page::after {
+  content: attr(data-location);
+  position: absolute;
+  left: 150%;
+  background-color: #222;
+  color: white;
+  display: block;
+  padding: .3rem .7rem;
+  width: fit-content;
+  opacity: 0;
+  transition: opacity .5s;
+  z-index: 3;
+}
+
+.next-page:hover::after, .next-page:hover::before {
+  opacity: 1;
+}
+
+.next-page:hover {
+  opacity: 1;
+}
+
+.hero-header {
+  position: relative;
+  height: 100vh;
+  z-index: 998;
+}
+
+.hro-header-position {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  clip-path: ellipse(100% 100% at 10% 0%);
+}
+
+.hro-header-content {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 999;
+}
+
+.hro-header-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.hro-header-DWbutton {
+  width: fit-content;
+  margin: 0 auto ;
+  background-color: #30BFBF;
+  padding: .7rem 1.3rem; 
+  color: white; 
+  border-radius: 1000px; 
+  font-weight: bold;
+  border: .2rem solid white;
+  outline: .2rem solid #30BFBF;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  color: black;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.hero-content {
+  position: relative;
+  height: 100vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.hero p {
+  word-spacing: .5rem;
+  line-height: 1.8;
+  font-size: 1.3rem;
+}
+
+aside {
+  grid-area: aside;
+  height: 300vh;
+  pointer-events: none;
+}
+
+.asdbr-nav-item {
+  font-size: 1.3rem;
+  list-style: none;
+  pointer-events: all;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.asdbr-nav-item li {
+  padding: .3rem;
+  padding-left: .6rem;
+  opacity: .0;
+  transition: all .6s;
+}
+
+.asdbr-nav-item li a {
+  text-decoration: none;
+  color: white;
+  opacity: .6;
+}
+
+.news_container {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.news_card {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  cursor: pointer;
+}
+
+.news_card:hover p{
+  text-decoration: underline;
+}
+
+.news_card img {
+  aspect-ratio: 16/9;
+}
+
+.news_content_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.news_linked_card {
+  font-size: .9rem;
+}
+
+form {
+  width: 100%;
+}
+
+.form_control {
+  width: 100%;
+  padding: .5rem;
+  font-family: inherit;
+  border: .1rem solid rgba(0, 0, 0, 0.114);
+  border-radius: .3rem;
+}
+
+.code-example {
+  width: 100%;
+  height: 350px;
+  background-color: #222;
+  padding: 1rem;
+}
+
+
+footer {
+  grid-area: footer;
+}
+
+.activate {
+  background-color: #30bfbf52;
+  opacity: 1 !important;
+  box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.100);
+  outline: .1rem solid #30BFBF;
+  border: .1rem solid white;
+  border-top-left-radius: .9rem;
+  border-bottom-left-radius: .9rem;
+}

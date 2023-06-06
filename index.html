@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo web, javascript.</title>
+    <link rel="stylesheet" href="./app.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+    <link rel="manifest" href="./ico/site.webmanifest">    
+</head>
+<body>
+
+  <main>
+      <header>
+        <div class="navbar_header">
+          <a href="#" class="navbar_brands">
+            <img src="./img/android-chrome-192x192-removebg-preview.png" alt="logo navbar" width="70" height="70" >
+            <span>
+                Desarrollo web
+            </span>
+          </a>
+
+          <div class="navbar_social">
+            <a href="#" class="linked_external_site">
+                <p>Facebook</p>
+                <img src="./img/icons/external.svg" alt="linked external site" width="15" height="15">
+            </a>
+            <a href="#" class="linked_external_site">
+                <p>instagram</p>
+                <img src="./img/icons/external.svg" alt="linked external site" width="15" height="15">
+            </a>
+            <a href="#" class="linked_external_site">
+                <p>Github</p>
+                <img src="./img/icons/external.svg" alt="linked external site" width="15" height="15">
+            </a>
+            <a href="html/embed.html" class="linked_external_site">
+                <p>Simetria UNV</p>
+                <img src="./img/icons/external.svg" alt="linked external site" width="15" height="15">
+            </a>
+          </div>
+    
+          <button class="navbar_button">
+            <img src="./img/icons/user.svg" alt="icons userLogin">
+            <span>login</span>
+          </button>
+        </div>
+      </header>
+    
+
+      <nav>
+        <div class="abs-nav-container">
+            <section class="navbar">
+                <div class="navbar_search">
+                    <input 
+                      type="search" 
+                      name="search" 
+                      id="input_seatch"
+                      class="form_control"
+                      placeholder="Que tema te interesa?"
+                      required
+                    >
+                </div>
+            
+                <ul class="navbar_main">
+            
+                    <li class="nb-main-item">    
+                        <a href="#" class="nb-main-linkTitle">Bienvenida</a>
+                        <div class="navbar_dropdwon navbar_show">
+                            <ul>
+                                <li class="nbr-drop-item">
+                                    <a href="#" class="nbr-drop-link">Ques esto?</a>
+                                </li>
+                                <li class="nbr-drop-item">
+                                    <a href="#" class="nbr-drop-link">Proposito</a>
+                                </li>
+                                <li class="nbr-drop-item">
+                                    <a href="#" class="nbr-drop-link">Quieres apoyar?</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+            
+                    <li class="nb-main-item">
+                        
+                        <a href="./html/html.html" class="nb-main-linkTitle">HTML</a>
+                        <div class="navbar_dropdwon">
+                            <ul>
+                                <li>
+                                    <a href="#">Una breve historia</a>
+                                </li>
+                                <li>
+                                    <a href="#">HTML 3? HTML4? HTML 5?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Semantico</a>
+                                </li>
+                                <li>
+                                    <a href="#">Etiquetas...</a>
+                                    <div class="navbar_dropdwon--html">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Doctype</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">HTML</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Head</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Body</a>
+                                            </li>
+            
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+            
+                    <li class="nb-main-item">    
+                        <a href="#" class="nb-main-linkTitle">CSS</a>
+                        <div class="navbar_dropdwon">
+                            <ul>
+                                <li>
+                                    <a href="#">Historia de CSS</a>
+                                </li>
+                                <li>
+                                    <a href="#">Formas de agregar CSS</a>
+                                </li>
+                                <li>
+                                    <a href="#">Selectores clases vs ids</a>
+                                </li>
+                                <li>
+                                    <a href="#">Herencia, especificidad</a>
+                                </li>
+                                <li>
+                                    <a href="#">pseudo selectores y <br> pseudo elementos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+            
+                    <li class="nb-main-item">
+                        
+                        <a href="#" class="nb-main-linkTitle">JavaScript</a>
+                        <div class="navbar_dropdwon">
+                            <ul>
+                                <li>
+                                    <a href="#">Logica de programacion</a>
+                                </li>
+                                <li>
+                                    <a href="#">Var vs Let vs Const</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+            
+                </ul>
+            </section>
+        </div>
+      </nav>
+    
+
+      <section class="hero">
+        <div class="hero-header">
+            <br id="Inicio" />
+            <div class="hro-header-position">
+                <img src="./img/luke-chesser-3rWagdKBF7U-unsplash.jpg" alt="Presentacion inicial de la pagina fondo de colores" width="100%" height="100%">
+            </div>
+            <div class="hro-header-content">
+                <h1 class="hro-header-title">Desarrollo web, programacion y JavaScript</h1>
+
+                <a href="./download/my_cv.pdf" download="my_cv.pdf" class="hro-header-DWbutton" >
+                    Descargar CV
+                </a>
+            </div>
+            <a href="#localizador" class="next-page" data-location="About" data-id="1">
+                <img src="./img/icons/arrowButton.svg" alt="">
+            </a>
+        </div>
+
+        <div class="hero-container">
+
+            <br id="localizador" />
+            <div class="hero-content">
+                <h2>Bienvenido, este no es un tutorial solo una documentacion</h2>
+
+                <p >
+                    Esto hace reflejo a mi nivel como desarrollador web, si te gusta y disfrutas del diseño, desarrollo o cualquier otro tipo de area en el desarrollo de software
+                    y le gusta el contenido que vee en esta web no dudes en contactarme para pregustas, ayudas, sugerencias, etc.
+                    Comenze como desarrollador web de las mejores formas y condiciones, trabajando tiempo completo y estudiando de forma autodidacta, soy de Chilito, Santiguino monotono, triste y resentido.
+                    Como dije las mejores condiciones, parti de desde lo mas dificil como programar en java, frustracion con un lenguaje dificil y complicado mas aun para una persona que no tiene ni la mas minima nivelacion academica, de hecho si encuentras errores ortograficos es comun si analizamos el(los) coleguios a lo que logre asistí, colegios donde abundan los malos profes y una escasa educacion.
+                </p>
+                <a href="#localizadorTwo" class="next-page" data-location="services" data-id="2">
+                    <img src="./img/icons/arrowButton.svg" alt="">
+                </a>
+            </div>
+
+            <br id="localizadorTwo" />
+            <div class="hero-service" style="height: 100vh; position: relative;">
+                <div class="hro-service-container" style="height: 100%; display: flex; justify-content: space-between; align-items: center; ">
+                    
+                    <article class="hro-service-card" style="width: 30%; display: flex; flex-direction: column; align-items: center; gap: 2rem; color: rgba(0, 0, 0, 0.363);">
+                        <img src="./img/icons/responsive.svg" alt="services for icons" width="100%" height="200">
+                        <strong>
+                            Web Responsive
+                        </strong> 
+                        <span class="hro-service-title" style="max-width: calc(100% - 15%); text-align: center;">utilizando las mejores practicas de CSS.</span>
+                    </article>
+    
+                    <article class="hro-service-card" style="width: 30%; display: flex; flex-direction: column; align-items: center; gap: 2rem; color: rgba(0, 0, 0, 0.363)">
+                        <img src="./img/icons/setting.svg" alt="services for icons" width="100%" height="200">
+                        <strong>
+                            Administracion web
+                        </strong> 
+                        <span class="hro-service-title" style="max-width: calc(100% - 15%); text-align: center;">Constante monitoreo y update de su sitio.</span>
+                    </article>
+    
+                    <article class="hro-service-card" style="width: 30%; display: flex; flex-direction: column; align-items: center; gap: 2rem; color: rgba(0, 0, 0, 0.363)">
+                        <img src="./img/icons/plus.svg" alt="services for icons" width="100%" height="200">
+                        <strong>
+                            Position seo / sem
+                        </strong> 
+                        <span class="hro-service-title" style="max-width: calc(100% - 15%); text-align: center;">Trabajando la keyword, y aparecer en google</span>
+                    </article>
+                    
+                    <a href="#Inicio" class="next-page" data-location="Inicio" data-id="0">
+                        <img src="./img/icons/arrowButton.svg" alt="" style="transform: rotate(180deg);">
+                    </a>
+                </div>
+ 
+            </div>
+        </div>
+
+      </section>
+    
+      <aside style="position: absolute; inset: 0; z-index: 9999;">
+        <section class="news_container">
+            <h1 style="display: block; margin-bottom: 1rem; border-bottom: .1rem solid black; padding-bottom: 1rem;">Publicaciones sugeridas</h1>
+    
+            <article class="news_card">
+                <img src="./img/walkator-klMii3cR9iI-unsplash.jpg" alt="Noticia" width="90" height="65" style="object-fit: cover;">
+                <div class="news_content_card">
+                    <h6>CSS Layout</h6>
+                    <p style="max-width: 180px; font-size: .8rem; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At?</p>
+                    <!-- <a href="#" class="news_linked_card">CSS Layout</a> -->
+                </div>
+            </article>
+    
+        </section>
+
+        <section class="asidebar" style="position: sticky; top: 50%;  transform:translateY(-50%); width: fit-content; margin-left: auto;">
+            <ul class="asdbr-nav-item">
+                <li class="activate">
+                    <a href="#" class="asdbr-nav-link">Inicio</a>
+                </li>
+                <li>
+                    <a href="#" class="asdbr-nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#" class="asdbr-nav-link">services</a>
+                </li>
+            </ul>
+        </section>
+      </aside>
+
+      <footer style="background-color: #30BFBF; height: 50vh;">
+        <div class="ftr-container">
+
+        </div>
+      </footer>
+    
+    
+  </main>
+
+  <!-- <script src="main.js"></script> -->
+  <script src="app.js" type="module"></script>
+</body>
+</html>
